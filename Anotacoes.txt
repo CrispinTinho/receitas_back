@@ -25,3 +25,12 @@ npm i fastify
 e 
 npm i pg
 
+Para colocar no github:
+( LEMBRE-SE DE CRIAR O .gitignore e colocar node_modules/ para que essa pasta não seja commitada )
+
+git add .
+
+git commit -m"mensagem do commit"
+
+git push
+
