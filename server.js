@@ -1,6 +1,8 @@
 import Fastify from 'fastify';
 import { Pool }  from 'pg';
 
+const servidor = Fastify();
+
 const sql = new Pool({
     user: "postgres",
     password: "senai",
@@ -9,18 +11,17 @@ const sql = new Pool({
     database: "receitas"
 })
 
-const servidor = Fastify();
-
-servidor.get('/usuarios', () => {
-    return 'Funcionando!'
+servidor.get('/usuarios', async () => {
+    const resultado = await sql.query('select * from usuario') 
+    return resultado.rows
 })
 
 servidor.post('/usuarios', async (request, reply) => {
     const body = request.body;
 
-    const resultado = await sql.query('select * from usuarios')
+    const resultado = await sql.query('INSERT INTO usuario (nome, senha) VALUES ($1, $2)', [body.nome, body.senha])
 
-    return "usuario Cadasrtado"
+    return "usuario Cadastrado"
 })
 
 servidor.listen({ 
