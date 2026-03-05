@@ -13,6 +13,24 @@ POST http://localhost:3000/usuarios
 Content-Type: application/json
 
 {
-    "nome": "Lucas",
+    "nome": "lucas",
     "senha": "1234"
 }
+
+###
+
+
+
+PUT http://localhost:3000/usuarios/1
+Content-Type: application/json
+
+{
+    "nome": "gairo",
+    "senha": "1234"
+}
+
+
+###
+
+
+DELETE  http://localhost:3000/usuarios/2
