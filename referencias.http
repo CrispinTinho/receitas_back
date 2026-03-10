@@ -1,7 +1,7 @@
 ###
     
 
-GET http://localhost:3000/usuarios  
+GET http://localhost:3000/usuarios 
 
 
 
@@ -13,7 +13,7 @@ POST http://localhost:3000/usuarios
 Content-Type: application/json
 
 {
-    "nome": "lucas",
+    "nome": "pikachu",
     "senha": "1234"
 }
 
@@ -21,7 +21,7 @@ Content-Type: application/json
 
 
 
-PUT http://localhost:3000/usuarios/1
+PUT http://localhost:3000/usuarios/6
 Content-Type: application/json
 
 {
