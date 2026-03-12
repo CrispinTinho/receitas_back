@@ -14,23 +14,41 @@ Content-Type: application/json
 
 {
     "nome": "pikachu",
-    "senha": "1234"
+    "senha": "1234",
+    "email": "pikachu22@gmail.com"
 }
+
 
 ###
 
 
-
-PUT http://localhost:3000/usuarios/6
+PUT http://localhost:3000/usuarios/1
 Content-Type: application/json
 
 {
     "nome": "gairo",
-    "senha": "1234"
+    "senha": "1234",
+    "email": "gairo@gmail.com"
 }
 
 
 ###
 
 
-DELETE  http://localhost:3000/usuarios/2
+DELETE  http://localhost:3000/usuarios/3
+
+
+###
+
+
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "senha": "1234",
+    "email": "pikachu@gmail.com"
+}
+
+
+###

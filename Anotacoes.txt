@@ -30,6 +30,7 @@ Copy Line Down: Shift+Alt+DownArrow (duplica para baixo o codigo selecionado)
 Pesquisar 'algo' no codigo: Ctrl + f 
 Abrir o Terminal: Control + '
 Organizar o codigo: Shift+Alt+F 
+Procurar e trocar no codigo: Ctrl + H 
 
 Para colocar no github:
 ( LEMBRE-SE DE CRIAR O .gitignore e colocar node_modules/ para que essa pasta não seja commitada )

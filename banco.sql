@@ -1,6 +1,7 @@
 CREATE TABLE usuario (
 id serial primary key,
 nome varchar(255),
+email varchar(255) not null unique,
 senha varchar(255),
 ativo boolean default true,
 criado_em timestamp default current_timestamp
@@ -11,6 +12,6 @@ id serial primary key,
 nome varchar(255),
 ingredientes text,
 instrucoes text not null,
-tempo-preparo_minutos text not null,
+tempo_preparo_minutos text not null,
 usuarios_id integer not null references usuario(id) on delete cascade
 );
