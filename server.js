@@ -1,7 +1,12 @@
 import Fastify from 'fastify';
 import { Pool } from 'pg';
+import cors from '@fastify/cors';
 
 const servidor = Fastify();
+
+servidor.register(cors, {
+    origin: '*'
+});
 
 servidor.post('/login', async (request, reply) => {
     const body = request.body;

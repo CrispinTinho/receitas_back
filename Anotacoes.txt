@@ -35,7 +35,7 @@ Procurar e trocar no codigo: Ctrl + H
 Para colocar no github:
 ( LEMBRE-SE DE CRIAR O .gitignore e colocar node_modules/ para que essa pasta não seja commitada )
 
-git add .
+git add .'
 
 git commit -m"mensagem do commit"
 
