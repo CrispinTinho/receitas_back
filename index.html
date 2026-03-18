@@ -1,0 +1,10 @@
+<h1> Aprendendo FETCH</h1>
+
+<script>
+    async function buscarUsuarios() {
+      const usuarios = await fetch('http://localhost:3000/usuarios')
+      const usuariosjson = await usuarios.json()
+      console.log(usuariosjson)
+    }
+buscarUsuarios()
+</script>
